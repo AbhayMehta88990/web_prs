@@ -4,21 +4,21 @@ import { File, Folder, Tree } from "./ui/file-tree";
 
 export default function StructureSection() {
   return (
-    <section id="structure" className="py-[120px] bg-[#f6f6f6]">
+    <section id="structure" className="py-[60px] md:py-[120px] bg-[#f6f6f6]">
       <div className="max-w-[1400px] mx-auto px-[5%]">
-        <div className="grid md:grid-cols-2 gap-[80px] items-center">
+        <div className="grid md:grid-cols-2 gap-[40px] md:gap-[80px] items-center">
           <div>
-            <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-[1.1] mb-[24px] text-[#1a1a1a]">
+            <h2 className="text-[clamp(2rem,5vw,4rem)] font-bold leading-[1.1] mb-[16px] md:mb-[24px] text-[#1a1a1a]">
               Repository<br />Structure
             </h2>
             <div className="mb-[24px]">
-              <div className="inline-block px-[20px] py-[10px] bg-[#1a1a1a] rounded-[8px] text-[12px] font-semibold uppercase tracking-[1.5px] text-[#ffffff]">
+              <div className="inline-block px-[16px] md:px-[20px] py-[8px] md:py-[10px] bg-[#1a1a1a] rounded-[8px] text-[10px] md:text-[12px] font-semibold uppercase tracking-[1.5px] text-[#ffffff]">
                 Our system organizes repository data into a comprehensive memory structure that tracks evolution, relationships, and context.
               </div>
             </div>
           </div>
 
-          <div className="bg-white rounded-[20px] border-2 border-gray-200 shadow-lg p-[24px]">
+          <div className="bg-white rounded-[16px] md:rounded-[20px] border-2 border-gray-200 shadow-lg p-[16px] md:p-[24px]">
             <Tree
               className="w-full"
               initialExpandedItems={["1", "2", "3", "4", "10", "11"]}

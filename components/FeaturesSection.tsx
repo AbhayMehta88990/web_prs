@@ -44,15 +44,15 @@ const cardData = [
 
 export default function FeaturesSection() {
   return (
-    <section id="features" className="pt-[40px] pb-[120px] bg-black">
+    <section id="features" className="pt-[40px] pb-[80px] md:pb-[120px] bg-black">
       <div className="max-w-[1400px] mx-auto px-[5%]">
-        <div className="flex justify-center mb-[60px]">
+        <div className="flex justify-center mb-[40px] md:mb-[60px]">
           <div className="px-[16px] py-[8px] bg-[#1a1a1a] rounded-full text-[12px] font-semibold uppercase tracking-[1.5px] text-[#ffffff]">
             Key Features
           </div>
         </div>
 
-        <div className="flex justify-center items-center min-h-[500px]">
+        <div className="flex justify-center items-center min-h-[400px] md:min-h-[500px]">
           <MorphingCardStack cards={cardData} defaultLayout="list" initialCard={1} />
         </div>
       </div>

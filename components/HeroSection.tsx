@@ -87,11 +87,11 @@ export default function HeroSection() {
               </p>
             </div>
 
-            <div className="flex flex-row gap-3">
-              <Button size="lg" className="gap-4 bg-white text-black hover:bg-gray-200">
+            <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto px-4 sm:px-0">
+              <Button size="lg" className="gap-4 bg-white text-black hover:bg-gray-200 w-full sm:w-auto">
                 Get Started <MoveRight className="w-4 h-4" />
               </Button>
-              <Button size="lg" className="gap-4 bg-transparent text-white hover:bg-[#1a1a1a] border border-white" variant="outline">
+              <Button size="lg" className="gap-4 bg-transparent text-white hover:bg-[#1a1a1a] border border-white w-full sm:w-auto" variant="outline" onClick={() => window.location.href = 'https://repository-memory-system.vercel.app'}>
                 View Demo <GitBranch className="w-4 h-4" />
               </Button>
             </div>

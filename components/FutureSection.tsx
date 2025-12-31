@@ -53,14 +53,14 @@ const improvements = [
 
 export default function FutureSection() {
   return (
-    <section id="future" className="py-[120px] bg-[#000000]">
+    <section id="future" className="py-[80px] md:py-[120px] bg-[#000000]">
       <div className="max-w-[1400px] mx-auto px-[5%]">
-        <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-[1.1] mb-[24px] text-[#ffffff] text-center">
+        <h2 className="text-[clamp(2rem,5vw,4rem)] font-bold leading-[1.1] mb-[16px] md:mb-[24px] text-[#ffffff] text-center">
           Future Improvements
         </h2>
         
-        <div className="flex justify-center mb-[60px]">
-          <div className="inline-block px-[20px] py-[10px] bg-[#1a1a1a] rounded-[8px] text-[12px] font-semibold uppercase tracking-[1.5px] text-[#ffffff]">
+        <div className="flex justify-center mb-[40px] md:mb-[60px]">
+          <div className="inline-block px-[16px] md:px-[20px] py-[8px] md:py-[10px] bg-[#1a1a1a] rounded-[8px] text-[10px] md:text-[12px] font-semibold uppercase tracking-[1.5px] text-[#ffffff] text-center">
             These are the some improvements which can be done in round 2
           </div>
         </div>

@@ -542,23 +542,24 @@ const MagicBento: React.FC<BentoProps> = ({
                     <ul className="magic-bento-card__details" style={{
                       listStyle: 'none',
                       padding: 0,
-                      margin: '16px 0 0 0',
+                      margin: '12px 0 0 0',
                       display: 'flex',
                       flexDirection: 'column',
-                      gap: '8px'
+                      gap: '6px'
                     }}>
                       {card.details.map((detail, idx) => (
                         <li key={idx} style={{
                           display: 'flex',
                           alignItems: 'flex-start',
-                          fontSize: '14px',
-                          lineHeight: '1.5',
+                          fontSize: '13px',
+                          lineHeight: '1.4',
                           color: '#b3b3b3'
                         }}>
                           <span style={{
-                            marginRight: '8px',
+                            marginRight: '6px',
                             color: '#ffffff',
-                            flexShrink: 0
+                            flexShrink: 0,
+                            fontSize: '12px'
                           }}>•</span>
                           <span>{detail}</span>
                         </li>
@@ -596,23 +597,24 @@ const MagicBento: React.FC<BentoProps> = ({
                   <ul className="magic-bento-card__details" style={{
                     listStyle: 'none',
                     padding: 0,
-                    margin: '16px 0 0 0',
+                    margin: '12px 0 0 0',
                     display: 'flex',
                     flexDirection: 'column',
-                    gap: '8px'
+                    gap: '6px'
                   }}>
                     {card.details.map((detail, idx) => (
                       <li key={idx} style={{
                         display: 'flex',
                         alignItems: 'flex-start',
-                        fontSize: '14px',
-                        lineHeight: '1.5',
+                        fontSize: '13px',
+                        lineHeight: '1.4',
                         color: '#b3b3b3'
                       }}>
                         <span style={{
-                          marginRight: '8px',
+                          marginRight: '6px',
                           color: '#ffffff',
-                          flexShrink: 0
+                          flexShrink: 0,
+                          fontSize: '12px'
                         }}>•</span>
                         <span>{detail}</span>
                       </li>

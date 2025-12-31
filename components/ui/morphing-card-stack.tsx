@@ -87,8 +87,8 @@ export function Component({
   }
 
   const containerStyles = {
-    stack: "relative h-64 w-64",
-    list: "flex flex-col gap-3",
+    stack: "relative h-64 w-64 max-w-full",
+    list: "flex flex-col gap-3 w-full",
   }
 
   const displayCards = layout === "stack" ? getStackOrder() : cards.map((c, i) => ({ ...c, stackPosition: i }))
@@ -155,7 +155,7 @@ export function Component({
                   className={cn(
                     "cursor-pointer rounded-xl border border-[#333333] bg-[#1a1a1a] p-4",
                     "hover:border-[#555555] transition-colors",
-                    layout === "stack" && "absolute w-56 h-48",
+                    layout === "stack" && "absolute w-56 h-48 max-w-[calc(100vw-2rem)]",
                     layout === "stack" && isTopCard && "cursor-grab active:cursor-grabbing",
                     layout === "list" && "w-full",
                     isExpanded && "ring-2 ring-[#555555]",
@@ -171,12 +171,12 @@ export function Component({
                       </div>
                     )}
                     <div className="min-w-0 flex-1">
-                      <h3 className="font-semibold text-white truncate">{card.title}</h3>
+                      <h3 className="font-semibold text-white text-sm md:text-base leading-tight mb-1">{card.title}</h3>
                       <p
                         className={cn(
-                          "text-sm text-[#b3b3b3] mt-1",
+                          "text-xs md:text-sm text-[#b3b3b3] mt-1",
                           layout === "stack" && "line-clamp-3",
-                          layout === "list" && "line-clamp-1",
+                          layout === "list" && "line-clamp-2",
                         )}
                       >
                         {card.description}

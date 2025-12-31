@@ -52,24 +52,24 @@ const solutions = [
 
 export default function ProblemSolutionSection() {
   return (
-    <section id="problem-solution" className="pt-[80px] pb-[40px] bg-[#000000]">
+    <section id="problem-solution" className="pt-[60px] md:pt-[80px] pb-[40px] bg-[#000000]">
       <div className="max-w-[1400px] mx-auto px-[5%]">
-        <div className="flex justify-center mb-[60px]">
-          <div className="px-[16px] py-[8px] bg-[#1a1a1a] rounded-full text-[12px] font-semibold uppercase tracking-[1.5px] text-[#ffffff]">
+        <div className="flex justify-center mb-[40px] md:mb-[60px]">
+          <div className="px-[16px] py-[8px] bg-[#1a1a1a] rounded-full text-[10px] md:text-[12px] font-semibold uppercase tracking-[1.5px] text-[#ffffff]">
             Problem vs Solution
           </div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-[40px]">
+        <div className="grid md:grid-cols-2 gap-[24px] md:gap-[40px]">
           <LinesPatternCard 
             className="bg-[#000000] border-[#1a1a1a]"
             gradientClassName="from-[#000000]/95 via-[#000000]/70 to-[#000000]/30"
           >
-            <LinesPatternCardBody className="p-10">
-              <h3 className="animate-title text-[2rem] font-bold mb-[40px] text-[#ffffff]">
+            <LinesPatternCardBody className="p-6 md:p-10">
+              <h3 className="animate-title text-[1.5rem] md:text-[2rem] font-bold mb-[24px] md:mb-[40px] text-[#ffffff]">
                 The Problem
               </h3>
-              <div className="space-y-[28px]">
+              <div className="space-y-[20px] md:space-y-[28px]">
                 {problems.map((problem, index) => {
                   const IconComponent = problem.icon;
                   return (
@@ -77,10 +77,10 @@ export default function ProblemSolutionSection() {
                       key={index}
                       className="comparison-item flex gap-[16px] items-center"
                     >
-                      <div className="flex-shrink-0 w-[40px] h-[40px] rounded-lg bg-[#1a1a1a] flex items-center justify-center text-[#ffffff]">
-                        <IconComponent className="w-[20px] h-[20px]" />
+                      <div className="flex-shrink-0 w-[36px] h-[36px] md:w-[40px] md:h-[40px] rounded-lg bg-[#1a1a1a] flex items-center justify-center text-[#ffffff]">
+                        <IconComponent className="w-[18px] h-[18px] md:w-[20px] md:h-[20px]" />
                       </div>
-                      <p className="text-[#b3b3b3] text-[16px] leading-[1.6]">
+                      <p className="text-[#b3b3b3] text-[14px] md:text-[16px] leading-[1.6]">
                         {problem.text}
                       </p>
                     </div>
@@ -94,11 +94,11 @@ export default function ProblemSolutionSection() {
             className="bg-[#000000] border-[#1a1a1a]"
             gradientClassName="from-[#000000]/95 via-[#000000]/70 to-[#000000]/30"
           >
-            <LinesPatternCardBody className="p-10">
-              <h3 className="animate-title text-[2rem] font-bold mb-[40px] text-[#ffffff]">
+            <LinesPatternCardBody className="p-6 md:p-10">
+              <h3 className="animate-title text-[1.5rem] md:text-[2rem] font-bold mb-[24px] md:mb-[40px] text-[#ffffff]">
                 The Solution
               </h3>
-              <div className="space-y-[28px]">
+              <div className="space-y-[20px] md:space-y-[28px]">
                 {solutions.map((solution, index) => {
                   const IconComponent = solution.icon;
                   return (
@@ -106,10 +106,10 @@ export default function ProblemSolutionSection() {
                       key={index}
                       className="comparison-item flex gap-[16px] items-center"
                     >
-                      <div className="flex-shrink-0 w-[40px] h-[40px] rounded-lg bg-[#1a1a1a] flex items-center justify-center text-[#ffffff]">
-                        <IconComponent className="w-[20px] h-[20px]" />
+                      <div className="flex-shrink-0 w-[36px] h-[36px] md:w-[40px] md:h-[40px] rounded-lg bg-[#1a1a1a] flex items-center justify-center text-[#ffffff]">
+                        <IconComponent className="w-[18px] h-[18px] md:w-[20px] md:h-[20px]" />
                       </div>
-                      <p className="text-[#b3b3b3] text-[16px] leading-[1.6]">
+                      <p className="text-[#b3b3b3] text-[14px] md:text-[16px] leading-[1.6]">
                         {solution.text}
                       </p>
                     </div>

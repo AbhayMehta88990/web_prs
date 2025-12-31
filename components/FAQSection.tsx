@@ -4,12 +4,12 @@ import { Accordion05 } from "./ui/accordion-05";
 
 export default function FAQSection() {
   return (
-    <section id="faq" className="py-[120px] bg-[#000000]">
+    <section id="faq" className="py-[60px] md:py-[120px] bg-[#000000]">
       <div className="max-w-[1200px] mx-auto px-[5%]">
-        <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-[1.1] mb-[16px] text-white text-center">
+        <h2 className="text-[clamp(2rem,5vw,4rem)] font-bold leading-[1.1] mb-[12px] md:mb-[16px] text-white text-center">
           Related Questions
         </h2>
-        <p className="text-[#b3b3b3] text-[clamp(1rem,1.5vw,1.25rem)] leading-[1.6] mb-[60px] text-center">
+        <p className="text-[#b3b3b3] text-[clamp(0.875rem,1.5vw,1.25rem)] leading-[1.6] mb-[40px] md:mb-[60px] text-center">
           Everything you need to know about the system
         </p>
 

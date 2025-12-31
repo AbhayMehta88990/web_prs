@@ -258,6 +258,14 @@
   .mobile-menu-button {
     display: flex;
   }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 /* Flow Diagram Styles */
@@ -287,10 +295,15 @@
 @media (max-width: 768px) {
   .flow-diagram-container {
     max-width: 100%;
+    overflow-x: auto;
   }
   
   .flow-diagram-container .relative.p-\[40px\] {
     padding: 20px;
+  }
+  
+  .flow-diagram-container svg {
+    min-width: 600px;
   }
 }
 
@@ -375,24 +388,32 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 0.75rem;
   position: relative;
   aspect-ratio: 4/3;
   min-height: 200px;
   width: 100%;
   max-width: 100%;
-  padding: 2.5rem;
-  border-radius: 20px;
+  padding: 1.5rem;
+  border-radius: 16px;
   border: 1px solid #1a1a1a;
   background: #0a0a0a;
   font-weight: 300;
-  overflow: hidden;
+  overflow: visible;
   transition: all 0.3s ease;
 
   --glow-x: 50%;
   --glow-y: 50%;
   --glow-intensity: 0;
   --glow-radius: 200px;
+}
+
+@media (min-width: 768px) {
+  .magic-bento-card {
+    padding: 2.5rem;
+    gap: 1rem;
+    border-radius: 20px;
+  }
 }
 
 .magic-bento-card:hover {
@@ -419,23 +440,44 @@
 }
 
 .magic-bento-card__number {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #ffffff;
 }
 
+@media (min-width: 768px) {
+  .magic-bento-card__number {
+    font-size: 3rem;
+  }
+}
+
 .magic-bento-card__title {
   font-weight: 600;
-  font-size: 1.5rem;
-  margin: 0 0 0.75rem;
+  font-size: 1.125rem;
+  margin: 0 0 0.5rem;
   color: #ffffff;
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .magic-bento-card__title {
+    font-size: 1.5rem;
+    margin: 0 0 0.75rem;
+  }
 }
 
 .magic-bento-card__description {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 0.875rem;
+  line-height: 1.5;
   color: #b3b3b3;
   opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .magic-bento-card__description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 }
 
 .magic-bento-card--text-autohide .magic-bento-card__title,
@@ -537,8 +579,25 @@
   }
 
   .magic-bento-card {
-    min-height: 180px;
-    padding: 1.5rem;
+    min-height: 280px;
+    aspect-ratio: auto;
+    height: auto;
+  }
+  
+  .magic-bento-card__details {
+    font-size: 0.8125rem !important;
+    margin-top: 0.75rem !important;
+  }
+  
+  .magic-bento-card__details li {
+    font-size: 0.8125rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  .magic-bento-card__icon {
+    width: 40px !important;
+    height: 40px !important;
+    margin-bottom: 12px !important;
   }
 }
 

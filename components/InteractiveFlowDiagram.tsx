@@ -57,12 +57,12 @@ export default function InteractiveFlowDiagram() {
   return (
     <div 
       ref={svgContainerRef}
-      className="relative w-full max-w-[900px] mx-auto"
+      className="relative w-full max-w-[900px] mx-auto overflow-x-auto"
       style={{
         background: '#f6f6f6',
       }}
     >
-      <div className="w-full h-[600px] flex items-center justify-center text-gray-400">
+      <div className="w-full h-[400px] md:h-[600px] flex items-center justify-center text-gray-400">
         Loading diagram...
       </div>
     </div>

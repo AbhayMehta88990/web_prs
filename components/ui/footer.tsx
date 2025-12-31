@@ -29,27 +29,27 @@ const links = [
 
 export default function FooterSection() {
     return (
-        <footer className="bg-[#000000] py-16 border-t border-[#1a1a1a]">
-            <div className="mx-auto max-w-5xl px-6">
+        <footer className="bg-[#000000] py-12 md:py-16 border-t border-[#1a1a1a]">
+            <div className="mx-auto max-w-5xl px-5 md:px-6">
                 <Link
                     href="/"
                     aria-label="go home"
-                    className="mx-auto block size-fit mb-8">
-                    <h3 className="text-white text-xl font-bold">Repository Memory System</h3>
+                    className="mx-auto block size-fit mb-6 md:mb-8">
+                    <h3 className="text-white text-lg md:text-xl font-bold text-center">Repository Memory System</h3>
                 </Link>
 
-                <div className="my-8 flex flex-wrap justify-center gap-6">
+                <div className="my-6 md:my-8 flex flex-wrap justify-center gap-4 md:gap-6">
                     {links.map((link, index) => (
                         <Link
                             key={index}
                             href={link.href}
-                            className="text-[#888888] hover:text-white block duration-150 text-sm">
+                            className="text-[#888888] hover:text-white block duration-150 text-xs md:text-sm">
                             <span>{link.title}</span>
                         </Link>
                     ))}
                 </div>
                 
-                <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
+                <div className="my-6 md:my-8 flex flex-wrap justify-center gap-6 text-sm">
                     <Link
                         href="https://github.com"
                         target="_blank"
@@ -69,7 +69,7 @@ export default function FooterSection() {
                     </Link>
                 </div>
                 
-                <span className="text-[#666666] block text-center text-sm">
+                <span className="text-[#666666] block text-center text-xs md:text-sm">
                     © {new Date().getFullYear()} Repository Memory System. Built for Hack The Winter.
                 </span>
             </div>
